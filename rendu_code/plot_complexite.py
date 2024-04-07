@@ -73,10 +73,10 @@ def plot_from_file_input(mode):
 
 
 if __name__ == "__main__":
-    sizes = [500, 1000, 3000, 5000, 10000]
+    sizes = [500, 1000, 3000, 5000]
     liste_liste_polygones = [
         list(gen_test.aligned_squares(0,0,100,200,0,i)) for i in sizes
     ]
     # for polygones in liste_liste_polygones:
     #     print(len(polygones))
-    plot(liste_liste_polygones,"aire_decroissante_merge")
+    plot(liste_liste_polygones,"naif")
